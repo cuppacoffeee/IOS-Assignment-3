@@ -78,6 +78,9 @@
 		61AFBB0E2BEF081E00ECCF95 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				61AFBB162BEF0A4800ECCF95 /* Favorites */,
+				61AFBB152BEF0A3500ECCF95 /* Explore */,
+				61AFBB142BEF0A2800ECCF95 /* Components */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -89,6 +92,27 @@
 				61AFBB122BEF08F800ECCF95 /* Brand.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		61AFBB142BEF0A2800ECCF95 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		61AFBB152BEF0A3500ECCF95 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		61AFBB162BEF0A4800ECCF95 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		84BE5AE52BEE200A00A8864C = {
