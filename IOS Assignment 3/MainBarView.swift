@@ -10,7 +10,7 @@ import SwiftUI
 struct MainBarView: View {
     var body: some View {
         TabView {
-            Text("Explore")
+            MainPageView()
                 .tabItem {
                     VStack {
                         Image(systemName: "magnifyingglass")
