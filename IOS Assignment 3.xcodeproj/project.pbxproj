@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61675D162BF18DC200C24728 /* Tripsview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D152BF18DC200C24728 /* Tripsview.swift */; };
 		61AFBB112BEF08DD00ECCF95 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFBB102BEF08DD00ECCF95 /* Car.swift */; };
 		61AFBB132BEF08F800ECCF95 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFBB122BEF08F800ECCF95 /* Brand.swift */; };
 		7D5639572BF0ECA50009772D /* favoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5639562BF0ECA50009772D /* favoritesView.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61675D152BF18DC200C24728 /* Tripsview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tripsview.swift; sourceTree = "<group>"; };
 		61AFBB102BEF08DD00ECCF95 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		61AFBB122BEF08F800ECCF95 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		7D5639562BF0ECA50009772D /* favoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesView.swift; sourceTree = "<group>"; };
@@ -155,8 +157,6 @@
 		610D4A022BF0F11C002C1D7F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7D5639502BF086D40009772D /* Favcarview.swift */,
-				7D56394C2BF082B70009772D /* Favview.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +178,7 @@
 		610D4A052BF0F15F002C1D7F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				61675D152BF18DC200C24728 /* Tripsview.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,12 +236,6 @@
 		8456B1952BF1154500E2C4F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				84BE5B212BEF1F6900A8864C /* MainBarView.swift */,
-				84BE5B232BEF1F9100A8864C /* MainPageView.swift */,
-				844E2F3E2BEF637F00FE2C70 /* BrandsView.swift */,
-				848D46232BF078EF00052452 /* BrandsCarView.swift */,
-				848D46252BF0921B00052452 /* CarDetailedView.swift */,
-				848D46292BF09B8100052452 /* CarListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -443,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				844E2F3D2BEF498500FE2C70 /* MainPageViewModel.swift in Sources */,
+				61675D162BF18DC200C24728 /* Tripsview.swift in Sources */,
 				84BE5AF42BEE200A00A8864C /* ContentView.swift in Sources */,
 				61AFBB132BEF08F800ECCF95 /* Brand.swift in Sources */,
 				848D46262BF0921B00052452 /* CarDetailedView.swift in Sources */,
