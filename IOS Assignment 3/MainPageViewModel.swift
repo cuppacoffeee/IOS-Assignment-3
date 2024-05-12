@@ -33,4 +33,19 @@ class MainPageViewModel: ObservableObject {
         Car(id: UUID().uuidString, carName: "", rating: 5.0, brand: "", pricePerDay: 50, description: "", mainImageName: "", imagesNames: ["", ""], insurance: "", numberOfSeats: 5, numberOfDoors: 4, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: false)
     ]
     
+  
+    private var favoritesManager = FavoritesManager.shared
+
+    func addFavorite(itemID: Int) {
+        favoritesManager.addFavorite(itemID: itemID)
+    }
+
+    func removeFavorite(itemID: Int) {
+        favoritesManager.removeFavorite(itemID: itemID)
+    }
+
+    func isFavorite(itemID: Int) -> Bool {
+        return favoritesManager.isFavorite(itemID: itemID)
+    }
 }
+

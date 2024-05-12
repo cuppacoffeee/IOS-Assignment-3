@@ -27,6 +27,7 @@ struct MainBarView: View {
                     VStack {
                         Image(systemName: "heart")
                         Text("Favorite")
+                        
                     }
                 }
                 .padding()
