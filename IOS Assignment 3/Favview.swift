@@ -13,12 +13,12 @@ struct FavView: View {
     
     var body: some View {
         NavigationView {
-            List(favoritesManager.favorites) { item in
+            List(favoritesManager.favoriteCars) { car in // Use favoriteCars instead of favorites
                 HStack {
-                    Text(item.title)
+                    Text(car.title) // Assuming Car has a title property
                     Spacer()
                     Button(action: {
-                        favoritesManager.removeFavorite(item: item)
+                        favoritesManager.removeFavorite(car: car) // Update to removeFavorite(car:)
                     }) {
                         Image(systemName: "trash")
                     }
