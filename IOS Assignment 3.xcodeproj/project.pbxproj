@@ -64,8 +64,8 @@
 		84BE5B082BEE200D00A8864C /* IOS Assignment 3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS Assignment 3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BE5B0C2BEE200D00A8864C /* IOS_Assignment_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Assignment_3UITests.swift; sourceTree = "<group>"; };
 		84BE5B0E2BEE200D00A8864C /* IOS_Assignment_3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Assignment_3UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		84BE5B212BEF1F6900A8864C /* MainBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainBarView.swift; path = "IOS Assignment 3/MainBarView.swift"; sourceTree = SOURCE_ROOT; };
-		84BE5B232BEF1F9100A8864C /* MainPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPageView.swift; path = "IOS Assignment 3/MainPageView.swift"; sourceTree = SOURCE_ROOT; };
+		84BE5B212BEF1F6900A8864C /* MainBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainBarView.swift; path = Views/MainBarView.swift; sourceTree = SOURCE_ROOT; };
+		84BE5B232BEF1F9100A8864C /* MainPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPageView.swift; path = Views/MainPageView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +201,7 @@
 			children = (
 				61AFBB102BEF08DD00ECCF95 /* Car.swift */,
 				61AFBB122BEF08F800ECCF95 /* Brand.swift */,
+				844E2F3C2BEF498500FE2C70 /* MainPageViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,9 +232,23 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
+		8456B1952BF1154500E2C4F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84BE5B212BEF1F6900A8864C /* MainBarView.swift */,
+				84BE5B232BEF1F9100A8864C /* MainPageView.swift */,
+				844E2F3E2BEF637F00FE2C70 /* BrandsView.swift */,
+				848D46232BF078EF00052452 /* BrandsCarView.swift */,
+				848D46252BF0921B00052452 /* CarDetailedView.swift */,
+				848D46292BF09B8100052452 /* CarListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		84BE5AE52BEE200A00A8864C = {
 			isa = PBXGroup;
 			children = (
+				8456B1952BF1154500E2C4F4 /* Views */,
 				84BE5AF02BEE200A00A8864C /* IOS Assignment 3 */,
 				84BE5B012BEE200D00A8864C /* IOS Assignment 3Tests */,
 				84BE5B0B2BEE200D00A8864C /* IOS Assignment 3UITests */,
@@ -266,7 +281,6 @@
 				848D46252BF0921B00052452 /* CarDetailedView.swift */,
 				848D46292BF09B8100052452 /* CarListView.swift */,
 				844E2F3A2BEF3C6700FE2C70 /* NavigationModifier.swift */,
-				844E2F3C2BEF498500FE2C70 /* MainPageViewModel.swift */,
 				84BE5AF52BEE200C00A8864C /* Assets.xcassets */,
 				84BE5AF72BEE200C00A8864C /* Preview Content */,
 			);
