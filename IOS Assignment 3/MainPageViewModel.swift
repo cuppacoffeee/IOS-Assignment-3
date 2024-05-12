@@ -29,6 +29,7 @@ class MainPageViewModel: ObservableObject {
     ]
     
     @Published var cars: [Car] = [
+<<<<<<< Updated upstream
     
         Car(id: UUID().uuidString, carName: "", rating: 5.0, brand: "", pricePerDay: 50, description: "", mainImageName: "", imagesNames: ["", ""], insurance: "", numberOfSeats: 5, numberOfDoors: 4, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: false)
     ]
@@ -48,4 +49,11 @@ class MainPageViewModel: ObservableObject {
         return favoritesManager.isCarFavorite(car: car)
     }
 
+=======
+        
+        Car(id: UUID().uuidString, carName: "BMW 440i", rating: 5.0, brand: "BMW", pricePerDay: 300, description: "", mainImageName: "440", imagesNames: ["440", ""], insurance: "", numberOfSeats: 4, numberOfDoors: 2, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: true),
+        
+        Car(id: UUID().uuidString, carName: "", rating: 5.0, brand: "", pricePerDay: 50, description: "", mainImageName: "", imagesNames: ["", ""], insurance: "", numberOfSeats: 5, numberOfDoors: 4, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: false)
+    ]
+>>>>>>> Stashed changes
 }
