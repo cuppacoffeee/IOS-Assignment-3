@@ -34,17 +34,19 @@ struct BrandsView: View {
                         HStack {
                             ForEach(viewModel.brand) {
                                 brand in
-                                RoundedRectangle(cornerRadius: 10)
-                                    .fill(.white)
-                                .frame(width: 150, height: 200)
-                                .overlay {
-                                    VStack {
-                                        Image(brand.imageName)
-                                            .resizable()
-                                            .scaledToFill()
-                                            .frame(width: 50, height: 50)
-                                        Text(brand.brandName)
-                                    }
+                                NavigationLink(destination: BrandsCarView(brand: brand, viewModel: viewModel)) {
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .fill(.white)
+                                        .frame(width: 150, height: 200)
+                                        .overlay {
+                                            VStack {
+                                                Image(brand.imageName)
+                                                    .resizable()
+                                                    .scaledToFill()
+                                                    .frame(width: 50, height: 50)
+                                                Text(brand.brandName)
+                                            }
+                                        }
                                 }
                             }
                         }
@@ -55,7 +57,7 @@ struct BrandsView: View {
                 .padding(.horizontal)
         }
     }
-
+ 
 #Preview {
     BrandsView(viewModel: MainPageViewModel())
 }

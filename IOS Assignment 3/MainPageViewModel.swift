@@ -28,7 +28,12 @@ class MainPageViewModel: ObservableObject {
         Brand(id: UUID().uuidString, brandName: "FORD", imageName: "Ford", carIds: [])
     ]
     
-
+    @Published var cars: [Car] = [
+    
+        Car(id: UUID().uuidString, carName: "", rating: 5.0, brand: "", pricePerDay: 50, description: "", mainImageName: "", imagesNames: ["", ""], insurance: "", numberOfSeats: 5, numberOfDoors: 4, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: false)
+    ]
+    
+  
     private var favoritesManager = FavoritesManager.shared
 
     func addFavorite(itemID: Int) {

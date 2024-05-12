@@ -16,6 +16,9 @@
 		844E2F3B2BEF3C6700FE2C70 /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E2F3A2BEF3C6700FE2C70 /* NavigationModifier.swift */; };
 		844E2F3D2BEF498500FE2C70 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E2F3C2BEF498500FE2C70 /* MainPageViewModel.swift */; };
 		844E2F3F2BEF637F00FE2C70 /* BrandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E2F3E2BEF637F00FE2C70 /* BrandsView.swift */; };
+		848D46242BF078EF00052452 /* BrandsCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D46232BF078EF00052452 /* BrandsCarView.swift */; };
+		848D46262BF0921B00052452 /* CarDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D46252BF0921B00052452 /* CarDetailedView.swift */; };
+		848D462A2BF09B8100052452 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D46292BF09B8100052452 /* CarListView.swift */; };
 		84BE5AF22BEE200A00A8864C /* IOS_Assignment_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE5AF12BEE200A00A8864C /* IOS_Assignment_3App.swift */; };
 		84BE5AF42BEE200A00A8864C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE5AF32BEE200A00A8864C /* ContentView.swift */; };
 		84BE5AF62BEE200C00A8864C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BE5AF52BEE200C00A8864C /* Assets.xcassets */; };
@@ -54,6 +57,9 @@
 		844E2F3A2BEF3C6700FE2C70 /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
 		844E2F3C2BEF498500FE2C70 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
 		844E2F3E2BEF637F00FE2C70 /* BrandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsView.swift; sourceTree = "<group>"; };
+		848D46232BF078EF00052452 /* BrandsCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsCarView.swift; sourceTree = "<group>"; };
+		848D46252BF0921B00052452 /* CarDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailedView.swift; sourceTree = "<group>"; };
+		848D46292BF09B8100052452 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
 		84BE5AEE2BEE200A00A8864C /* IOS Assignment 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Assignment 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BE5AF12BEE200A00A8864C /* IOS_Assignment_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Assignment_3App.swift; sourceTree = "<group>"; };
 		84BE5AF32BEE200A00A8864C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,6 +173,9 @@
 				84BE5B212BEF1F6900A8864C /* MainBarView.swift */,
 				84BE5B232BEF1F9100A8864C /* MainPageView.swift */,
 				844E2F3E2BEF637F00FE2C70 /* BrandsView.swift */,
+				848D46232BF078EF00052452 /* BrandsCarView.swift */,
+				848D46252BF0921B00052452 /* CarDetailedView.swift */,
+				848D46292BF09B8100052452 /* CarListView.swift */,
 				844E2F3A2BEF3C6700FE2C70 /* NavigationModifier.swift */,
 				844E2F3C2BEF498500FE2C70 /* MainPageViewModel.swift */,
 				84BE5AF52BEE200C00A8864C /* Assets.xcassets */,
@@ -335,6 +344,9 @@
 				84BE5AF42BEE200A00A8864C /* ContentView.swift in Sources */,
 				7D56394D2BF082B70009772D /* Favview.swift in Sources */,
 				61AFBB132BEF08F800ECCF95 /* Brand.swift in Sources */,
+				848D46262BF0921B00052452 /* CarDetailedView.swift in Sources */,
+				848D46242BF078EF00052452 /* BrandsCarView.swift in Sources */,
+				848D462A2BF09B8100052452 /* CarListView.swift in Sources */,
 				844E2F3B2BEF3C6700FE2C70 /* NavigationModifier.swift in Sources */,
 				844E2F3F2BEF637F00FE2C70 /* BrandsView.swift in Sources */,
 				84BE5B242BEF1F9100A8864C /* MainPageView.swift in Sources */,
