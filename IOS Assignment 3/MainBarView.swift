@@ -10,6 +10,7 @@ import SwiftUI
 struct MainBarView: View {
     @StateObject private var viewModel = MainPageViewModel()
     
+    
     var body: some View {
         TabView {
             MainPageView(viewModel: MainPageViewModel())
@@ -22,11 +23,13 @@ struct MainBarView: View {
                 }
                 .padding()
             
+            
             Text("Favorite")
                 .tabItem {
                     VStack {
                         Image(systemName: "heart")
                         Text("Favorite")
+                        
                         
                     }
                 }

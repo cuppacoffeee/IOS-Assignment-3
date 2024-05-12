@@ -27,4 +27,9 @@ struct Car: Identifiable,Codable,Hashable {
     var hostImageName: String
     var hostJoinDate: String
     var isFavorite: Bool
+    
+    mutating func toggleFavorite() {
+        isFavorite.toggle()
+    }
 }
+
