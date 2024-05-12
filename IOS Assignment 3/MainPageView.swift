@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct MainPageView: View {
+    @StateObject var viewModel: MainPageViewModel
+    init(viewModel: MainPageViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 ZStack{
                     backgroundColor()
                     
-                    Spacer().frame(height: 150)
-                    searchBar()
+                    VStack {
+                        Spacer().frame(height: 150)
+                        searchBar()
+                        Spacer().frame(height: 60)
+                        BrandsView(viewModel: MainPageViewModel())
+                    }
                 }
             }
             .modifier(NavigationModifier())
@@ -24,7 +33,7 @@ struct MainPageView: View {
 }
 
 #Preview {
-    MainPageView()
+    MainPageView(viewModel: MainPageViewModel())
 }
 
 struct backgroundColor: View {
