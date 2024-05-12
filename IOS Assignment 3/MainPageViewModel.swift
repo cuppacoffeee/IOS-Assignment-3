@@ -9,16 +9,6 @@ import Foundation
 
 class MainPageViewModel: ObservableObject {
     @Published var brand: [Brand] = [
-        /*
-        .init(id: UUID().uuidString, brandName: "HOLDEN", imageName: "Holden", carIds: [])
-        .init(id: UUID().uuidString, brandName: "AUDI", imageName: "Audi", carIds: [])
-        .init(id: UUID().uuidString, brandName: "BENTLEY", imageName: "Bentley", carIds: [])
-        .init(id: UUID().uuidString, brandName: "BMW", imageName: "BMW", carIds: [])
-        .init(id: UUID().uuidString, brandName: "VOLKS", imageName: "Volks", carIds: [])
-        .init(id: UUID().uuidString, brandName: "LINCOLN", imageName: "Lincoln", carIds: [])
-        .init(id: UUID().uuidString, brandName: "FORD", imageName: "Ford", carIds: [])
-         */
-        
         Brand(id: UUID().uuidString, brandName: "HOLDEN", imageName: "Holden", carIds: []),
         Brand(id: UUID().uuidString, brandName: "AUDI", imageName: "Audi", carIds: []),
         Brand(id: UUID().uuidString, brandName: "BENTLEY", imageName: "Bentley", carIds: []),
@@ -29,31 +19,13 @@ class MainPageViewModel: ObservableObject {
     ]
     
     @Published var cars: [Car] = [
-<<<<<<< Updated upstream
-    
-        Car(id: UUID().uuidString, carName: "", rating: 5.0, brand: "", pricePerDay: 50, description: "", mainImageName: "", imagesNames: ["", ""], insurance: "", numberOfSeats: 5, numberOfDoors: 4, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: false)
-    ]
+
     
   
-    private var favoritesManager = FavoritesManager.shared
-
-    func addFavorite(car: Car) {
-        favoritesManager.addFavorite(car: car)
-    }
-
-    func removeFavorite(car: Car) {
-        favoritesManager.removeFavorite(car: car)
-    }
-
-    func isFavorite(car: Car) -> Bool {
-        return favoritesManager.isCarFavorite(car: car)
-    }
-
-=======
         
         Car(id: UUID().uuidString, carName: "BMW 440i", rating: 5.0, brand: "BMW", pricePerDay: 300, description: "", mainImageName: "440", imagesNames: ["440", ""], insurance: "", numberOfSeats: 4, numberOfDoors: 2, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: true),
         
         Car(id: UUID().uuidString, carName: "", rating: 5.0, brand: "", pricePerDay: 50, description: "", mainImageName: "", imagesNames: ["", ""], insurance: "", numberOfSeats: 5, numberOfDoors: 4, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: false)
     ]
->>>>>>> Stashed changes
-}
+
+

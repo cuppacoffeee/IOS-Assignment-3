@@ -93,9 +93,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		610D49FA2BF0F01F002C1D7F /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				610D4A032BF0F135002C1D7F /* Views */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		610D49FB2BF0F038002C1D7F /* More */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		610D49FC2BF0F046002C1D7F /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				610D4A042BF0F14B002C1D7F /* Views */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		610D49FD2BF0F059002C1D7F /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				610D4A052BF0F15F002C1D7F /* Views */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		610D49FE2BF0F0BB002C1D7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		610D49FF2BF0F0C5002C1D7F /* viewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModifiers;
+			sourceTree = "<group>";
+		};
+		610D4A002BF0F0FD002C1D7F /* Viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Viewmodels;
+			sourceTree = "<group>";
+		};
+		610D4A012BF0F107002C1D7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		610D4A022BF0F11C002C1D7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D5639502BF086D40009772D /* Favcarview.swift */,
+				7D56394C2BF082B70009772D /* Favview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		610D4A032BF0F135002C1D7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		610D4A042BF0F14B002C1D7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		610D4A052BF0F15F002C1D7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		61AFBB0E2BEF081E00ECCF95 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				610D49FD2BF0F059002C1D7F /* Trips */,
+				610D49FC2BF0F046002C1D7F /* Tabbar */,
+				610D49FB2BF0F038002C1D7F /* More */,
+				610D49FA2BF0F01F002C1D7F /* Inbox */,
 				61AFBB162BEF0A4800ECCF95 /* Favorites */,
 				61AFBB152BEF0A3500ECCF95 /* Explore */,
 				61AFBB142BEF0A2800ECCF95 /* Components */,
@@ -115,6 +208,8 @@
 		61AFBB142BEF0A2800ECCF95 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				610D49FF2BF0F0C5002C1D7F /* viewModifiers */,
+				610D49FE2BF0F0BB002C1D7F /* Views */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -122,6 +217,8 @@
 		61AFBB152BEF0A3500ECCF95 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				610D4A012BF0F107002C1D7F /* Views */,
+				610D4A002BF0F0FD002C1D7F /* Viewmodels */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -129,6 +226,7 @@
 		61AFBB162BEF0A4800ECCF95 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
+				610D4A022BF0F11C002C1D7F /* Views */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
