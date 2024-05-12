@@ -29,18 +29,18 @@ class MainPageViewModel: ObservableObject {
     ]
     
 
-//    private var favoritesManager = FavoritesManager.shared
-//
-//    func addFavorite(itemID: Int) {
-//        favoritesManager.addFavorite(itemID: itemID)
-//    }
-//
-//    func removeFavorite(itemID: Int) {
-//        favoritesManager.removeFavorite(itemID: itemID)
-//    }
-//
-//    func isFavorite(itemID: Int) -> Bool {
-//        return favoritesManager.isFavorite(itemID: itemID)
-//    }
-//}
+    private var favoritesManager = FavoritesManager.shared
+
+    func addFavorite(itemID: Int) {
+        favoritesManager.addFavorite(itemID: itemID)
+    }
+
+    func removeFavorite(itemID: Int) {
+        favoritesManager.removeFavorite(itemID: itemID)
+    }
+
+    func isFavorite(itemID: Int) -> Bool {
+        return favoritesManager.isFavorite(itemID: itemID)
+    }
+}
 
