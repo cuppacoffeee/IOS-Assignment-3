@@ -9,16 +9,6 @@ import Foundation
 
 class MainPageViewModel: ObservableObject {
     @Published var brand: [Brand] = [
-        /*
-        .init(id: UUID().uuidString, brandName: "HOLDEN", imageName: "Holden", carIds: [])
-        .init(id: UUID().uuidString, brandName: "AUDI", imageName: "Audi", carIds: [])
-        .init(id: UUID().uuidString, brandName: "BENTLEY", imageName: "Bentley", carIds: [])
-        .init(id: UUID().uuidString, brandName: "BMW", imageName: "BMW", carIds: [])
-        .init(id: UUID().uuidString, brandName: "VOLKS", imageName: "Volks", carIds: [])
-        .init(id: UUID().uuidString, brandName: "LINCOLN", imageName: "Lincoln", carIds: [])
-        .init(id: UUID().uuidString, brandName: "FORD", imageName: "Ford", carIds: [])
-         */
-        
         Brand(id: UUID().uuidString, brandName: "HOLDEN", imageName: "Holden", carIds: []),
         Brand(id: UUID().uuidString, brandName: "AUDI", imageName: "Audi", carIds: []),
         Brand(id: UUID().uuidString, brandName: "BENTLEY", imageName: "Bentley", carIds: []),
@@ -30,8 +20,11 @@ class MainPageViewModel: ObservableObject {
     
     @Published var cars: [Car] = [
     
+        Car(id: UUID().uuidString, carName: "", rating: 5.0, brand: "BMW", pricePerDay: 50, description: "", mainImageName: "BMW", imagesNames: ["", ""], insurance: "", numberOfSeats: 5, numberOfDoors: 4, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: false),
+        
         Car(id: UUID().uuidString, carName: "", rating: 5.0, brand: "", pricePerDay: 50, description: "", mainImageName: "", imagesNames: ["", ""], insurance: "", numberOfSeats: 5, numberOfDoors: 4, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: false)
     ]
+<<<<<<< HEAD
     
   
     private var favoritesManager = FavoritesManager.shared
@@ -49,3 +42,8 @@ class MainPageViewModel: ObservableObject {
     }
 }
 
+=======
+}
+
+
+>>>>>>> bfd2b3a (Add CarListView)
