@@ -7,38 +7,32 @@
 
 import SwiftUI
 
+
 struct CarDetailedView: View {
-    
-    @State private var isFavorite: Bool
-    let car: Car
-    @StateObject private var favoritesManager: FavoritesManager
-    
-    init(car: Car) {
-        self.car = car
-        self._isFavorite = State(initialValue: false) // Initialize isFavorite to false
-        self._favoritesManager = StateObject(wrappedValue: FavoritesManager.shared) // Initialize favoritesManager
-        _isFavorite = State(initialValue: favoritesManager.isCarFavorite(car: car)) // Update isFavorite based on the stored favorite status
+
+    let index: Int
+    @StateObject private var viewModel: MainPageViewModel
+
+    init(viewModel: MainPageViewModel, index: Int) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+        self.index = index
     }
-    
+
+
     var body: some View {
         VStack {
-            // Car details...
-                
-                Button(action: {
-                    isFavorite.toggle()
-                    if isFavorite {
-                        favoritesManager.addFavorite(car: car)
-                    } else {
-                        favoritesManager.removeFavorite(car: car)
-                    }
-                }) {
-                    Image(systemName: isFavorite ? "heart.fill" : "heart")
-                        .foregroundColor(isFavorite ? .red : .gray)
-                }
-            }
-            .padding()
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
         }
+        .padding()
     }
+}
+
+#Preview {
+    CarDetailedView(viewModel: MainPageViewModel(), index: 0)
+}
 
 
 
