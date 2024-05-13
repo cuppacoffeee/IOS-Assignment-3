@@ -178,7 +178,7 @@
 			children = (
 				61675D212BF1912900C24728 /* FavoritesView.swift */,
 			);
-			path = Views;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		610D4A032BF0F135002C1D7F /* Views */ = {
@@ -253,7 +253,7 @@
 			children = (
 				610D4A022BF0F11C002C1D7F /* Views */,
 			);
-			path = Favorites;
+			name = Favorites;
 			sourceTree = "<group>";
 		};
 		8456B1952BF1154500E2C4F4 /* Views */ = {
