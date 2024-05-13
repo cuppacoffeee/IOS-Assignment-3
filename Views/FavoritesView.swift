@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FavoritesView: View {
+struct favoritesView: View {
     @StateObject private var viewModel: ExploreViewModel
     var favoriteCars: [Car]
     init(viewModel: ExploreViewModel) {
@@ -21,10 +21,10 @@ struct FavoritesView: View {
                     ForEach(favoriteCars) { car in
                         let index = viewModel.cars.firstIndex(where: {$0 == car}) ?? 0
                         NavigationLink {
-                            DetailCarView(viewModel: viewModel, index: index)
+                            CarDetailedView(viewModel: viewModel, index: index)
                                 .navigationBarBackButtonHidden()
                         } label: {
-                            CustomCarView(index: index, viewModel: viewModel)
+                            CarListView(index: index, viewModel: viewModel)
                         }
                         
                         
@@ -40,5 +40,5 @@ struct FavoritesView: View {
 }
 
 #Preview {
-    FavoritesView(viewModel: ExploreViewModel())
+    FavoritesView(viewModel: MainPageViewModel())
 }
