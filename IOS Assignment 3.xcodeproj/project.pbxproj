@@ -15,9 +15,6 @@
 		61675D202BF1901A00C24728 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D1F2BF1901A00C24728 /* NotificationsView.swift */; };
 		61675D222BF1912900C24728 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D212BF1912900C24728 /* FavoritesView.swift */; };
 		61675D242BF1919B00C24728 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D232BF1919B00C24728 /* ExploreViewModel.swift */; };
-		61675D282BF1B88200C24728 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D272BF1B88200C24728 /* CustomSearchBar.swift */; };
-		61675D2A2BF1B98600C24728 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D292BF1B98600C24728 /* ExploreView.swift */; };
-		61675D2C2BF1B9C100C24728 /* PopularBrandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D2B2BF1B9C100C24728 /* PopularBrandsView.swift */; };
 		61675D2E2BF1BA3900C24728 /* TopCarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D2D2BF1BA3900C24728 /* TopCarsView.swift */; };
 		61675D302BF1BA7A00C24728 /* DetailCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D2F2BF1BA7A00C24728 /* DetailCarView.swift */; };
 		61675D322BF1BAB000C24728 /* MyInsuranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D312BF1BAB000C24728 /* MyInsuranceView.swift */; };
@@ -33,6 +30,12 @@
 		8456B1AD2BF19AD600E2C4F4 /* CarDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1AC2BF19AD600E2C4F4 /* CarDetailedView.swift */; };
 		8456B1AF2BF19AE000E2C4F4 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1AE2BF19AE000E2C4F4 /* CarListView.swift */; };
 		8456B1B12BF19C6200E2C4F4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1B02BF19C6200E2C4F4 /* ImageView.swift */; };
+		8456B1B32BF1BFA300E2C4F4 /* CustomCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1B22BF1BFA300E2C4F4 /* CustomCarView.swift */; };
+		8456B1B52BF1BFCB00E2C4F4 /* EmpthElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1B42BF1BFCB00E2C4F4 /* EmpthElementView.swift */; };
+		8456B1B72BF1C03100E2C4F4 /* NavigationStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1B62BF1C03100E2C4F4 /* NavigationStackModifier.swift */; };
+		8456B1B92BF1DD2700E2C4F4 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1B82BF1DD2700E2C4F4 /* CustomSearchBar.swift */; };
+		8456B1BB2BF1DD2F00E2C4F4 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1BA2BF1DD2F00E2C4F4 /* ExploreView.swift */; };
+		8456B1BD2BF1DD3700E2C4F4 /* PopularBrandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B1BC2BF1DD3700E2C4F4 /* PopularBrandsView.swift */; };
 		84BE5AF22BEE200A00A8864C /* IOS_Assignment_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE5AF12BEE200A00A8864C /* IOS_Assignment_3App.swift */; };
 		84BE5AF42BEE200A00A8864C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE5AF32BEE200A00A8864C /* ContentView.swift */; };
 		84BE5AF62BEE200C00A8864C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BE5AF52BEE200C00A8864C /* Assets.xcassets */; };
@@ -70,9 +73,6 @@
 		61675D1F2BF1901A00C24728 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		61675D212BF1912900C24728 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavoritesView.swift; path = Views/FavoritesView.swift; sourceTree = SOURCE_ROOT; };
 		61675D232BF1919B00C24728 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
-		61675D272BF1B88200C24728 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
-		61675D292BF1B98600C24728 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
-		61675D2B2BF1B9C100C24728 /* PopularBrandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularBrandsView.swift; sourceTree = "<group>"; };
 		61675D2D2BF1BA3900C24728 /* TopCarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCarsView.swift; sourceTree = "<group>"; };
 		61675D2F2BF1BA7A00C24728 /* DetailCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCarView.swift; sourceTree = "<group>"; };
 		61675D312BF1BAB000C24728 /* MyInsuranceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInsuranceView.swift; sourceTree = "<group>"; };
@@ -88,6 +88,12 @@
 		8456B1AC2BF19AD600E2C4F4 /* CarDetailedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailedView.swift; sourceTree = "<group>"; };
 		8456B1AE2BF19AE000E2C4F4 /* CarListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
 		8456B1B02BF19C6200E2C4F4 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		8456B1B22BF1BFA300E2C4F4 /* CustomCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomCarView.swift; path = Views/CustomCarView.swift; sourceTree = SOURCE_ROOT; };
+		8456B1B42BF1BFCB00E2C4F4 /* EmpthElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmpthElementView.swift; path = Views/EmpthElementView.swift; sourceTree = SOURCE_ROOT; };
+		8456B1B62BF1C03100E2C4F4 /* NavigationStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationStackModifier.swift; path = Views/NavigationStackModifier.swift; sourceTree = SOURCE_ROOT; };
+		8456B1B82BF1DD2700E2C4F4 /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		8456B1BA2BF1DD2F00E2C4F4 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		8456B1BC2BF1DD3700E2C4F4 /* PopularBrandsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularBrandsView.swift; sourceTree = "<group>"; };
 		84BE5AEE2BEE200A00A8864C /* IOS Assignment 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Assignment 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BE5AF12BEE200A00A8864C /* IOS_Assignment_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Assignment_3App.swift; sourceTree = "<group>"; };
 		84BE5AF32BEE200A00A8864C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -163,6 +169,8 @@
 		610D49FE2BF0F0BB002C1D7F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8456B1B22BF1BFA300E2C4F4 /* CustomCarView.swift */,
+				8456B1B42BF1BFCB00E2C4F4 /* EmpthElementView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 		610D49FF2BF0F0C5002C1D7F /* viewModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				8456B1B62BF1C03100E2C4F4 /* NavigationStackModifier.swift */,
 			);
 			path = viewModifiers;
 			sourceTree = "<group>";
@@ -185,9 +194,9 @@
 		610D4A012BF0F107002C1D7F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				61675D272BF1B88200C24728 /* CustomSearchBar.swift */,
-				61675D292BF1B98600C24728 /* ExploreView.swift */,
-				61675D2B2BF1B9C100C24728 /* PopularBrandsView.swift */,
+				8456B1BC2BF1DD3700E2C4F4 /* PopularBrandsView.swift */,
+				8456B1BA2BF1DD2F00E2C4F4 /* ExploreView.swift */,
+				8456B1B82BF1DD2700E2C4F4 /* CustomSearchBar.swift */,
 				61675D2D2BF1BA3900C24728 /* TopCarsView.swift */,
 				61675D2F2BF1BA7A00C24728 /* DetailCarView.swift */,
 				61675D312BF1BAB000C24728 /* MyInsuranceView.swift */,
@@ -247,6 +256,7 @@
 		61AFBB0F2BEF083500ECCF95 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				844E2F3A2BEF3C6700FE2C70 /* NavigationModifier.swift */,
 				61AFBB102BEF08DD00ECCF95 /* Car.swift */,
 				61AFBB122BEF08F800ECCF95 /* Brand.swift */,
 				844E2F3C2BEF498500FE2C70 /* MainPageViewModel.swift */,
@@ -298,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				8456B1952BF1154500E2C4F4 /* Views */,
+				61AFBB0F2BEF083500ECCF95 /* Models */,
 				84BE5AF02BEE200A00A8864C /* IOS Assignment 3 */,
 				84BE5B012BEE200D00A8864C /* IOS Assignment 3Tests */,
 				84BE5B0B2BEE200D00A8864C /* IOS Assignment 3UITests */,
@@ -319,11 +330,9 @@
 			isa = PBXGroup;
 			children = (
 				84BE5AF12BEE200A00A8864C /* IOS_Assignment_3App.swift */,
-				61AFBB0F2BEF083500ECCF95 /* Models */,
 				61AFBB0E2BEF081E00ECCF95 /* Core */,
 				84BE5AF32BEE200A00A8864C /* ContentView.swift */,
 				7D5639562BF0ECA50009772D /* favoritesView.swift */,
-				844E2F3A2BEF3C6700FE2C70 /* NavigationModifier.swift */,
 				84BE5AF52BEE200C00A8864C /* Assets.xcassets */,
 				84BE5AF72BEE200C00A8864C /* Preview Content */,
 			);
@@ -486,14 +495,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				61675D222BF1912900C24728 /* FavoritesView.swift in Sources */,
+				8456B1B72BF1C03100E2C4F4 /* NavigationStackModifier.swift in Sources */,
 				61675D342BF1BAEA00C24728 /* ImageViewPager.swift in Sources */,
 				61675D2E2BF1BA3900C24728 /* TopCarsView.swift in Sources */,
 				844E2F3D2BEF498500FE2C70 /* MainPageViewModel.swift in Sources */,
 				61675D1C2BF18F4900C24728 /* EditProfileView.swift in Sources */,
+				8456B1BB2BF1DD2F00E2C4F4 /* ExploreView.swift in Sources */,
 				61675D162BF18DC200C24728 /* TripsView.swift in Sources */,
 				61675D322BF1BAB000C24728 /* MyInsuranceView.swift in Sources */,
+				8456B1B32BF1BFA300E2C4F4 /* CustomCarView.swift in Sources */,
 				8456B1B12BF19C6200E2C4F4 /* ImageView.swift in Sources */,
 				84BE5AF42BEE200A00A8864C /* ContentView.swift in Sources */,
+				8456B1B92BF1DD2700E2C4F4 /* CustomSearchBar.swift in Sources */,
 				61AFBB132BEF08F800ECCF95 /* Brand.swift in Sources */,
 				61675D202BF1901A00C24728 /* NotificationsView.swift in Sources */,
 				7D5639572BF0ECA50009772D /* favoritesView.swift in Sources */,
@@ -502,17 +515,16 @@
 				844E2F3B2BEF3C6700FE2C70 /* NavigationModifier.swift in Sources */,
 				8456B1A92BF19AC300E2C4F4 /* BrandsCarView.swift in Sources */,
 				61675D302BF1BA7A00C24728 /* DetailCarView.swift in Sources */,
-				61675D282BF1B88200C24728 /* CustomSearchBar.swift in Sources */,
 				61675D182BF18E5E00C24728 /* MainTabbarView.swift in Sources */,
+				8456B1B52BF1BFCB00E2C4F4 /* EmpthElementView.swift in Sources */,
 				84BE5B242BEF1F9100A8864C /* MainPageView.swift in Sources */,
 				61675D242BF1919B00C24728 /* ExploreViewModel.swift in Sources */,
 				8456B1AB2BF19ACA00E2C4F4 /* BrandsView.swift in Sources */,
 				84BE5B222BEF1F6900A8864C /* MainBarView.swift in Sources */,
 				8456B1AD2BF19AD600E2C4F4 /* CarDetailedView.swift in Sources */,
-				61675D2C2BF1B9C100C24728 /* PopularBrandsView.swift in Sources */,
 				84BE5AF22BEE200A00A8864C /* IOS_Assignment_3App.swift in Sources */,
 				61AFBB112BEF08DD00ECCF95 /* Car.swift in Sources */,
-				61675D2A2BF1B98600C24728 /* ExploreView.swift in Sources */,
+				8456B1BD2BF1DD3700E2C4F4 /* PopularBrandsView.swift in Sources */,
 				8456B1AF2BF19AE000E2C4F4 /* CarListView.swift in Sources */,
 				61675D362BF1BB0D00C24728 /* TripDateView.swift in Sources */,
 			);

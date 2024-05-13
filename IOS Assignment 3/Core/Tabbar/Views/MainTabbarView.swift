@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct MainTabbarView: View {
-    @StateObject private var viewModel = MainPageViewModel()
+    @StateObject private var viewModel = ExploreViewModel()
     @State private var selectedTab: Int = 0
     var body: some View {
         TabView {
-            MainPageView(viewModel: viewModel)
+            ExploreView(viewModel: viewModel)
                 .tabItem {
                     VStack {
                         Image(systemName: "magnifyingglass")
