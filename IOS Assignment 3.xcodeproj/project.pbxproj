@@ -15,6 +15,14 @@
 		61675D202BF1901A00C24728 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D1F2BF1901A00C24728 /* NotificationsView.swift */; };
 		61675D222BF1912900C24728 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D212BF1912900C24728 /* FavoritesView.swift */; };
 		61675D242BF1919B00C24728 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D232BF1919B00C24728 /* ExploreViewModel.swift */; };
+		61675D282BF1B88200C24728 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D272BF1B88200C24728 /* CustomSearchBar.swift */; };
+		61675D2A2BF1B98600C24728 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D292BF1B98600C24728 /* ExploreView.swift */; };
+		61675D2C2BF1B9C100C24728 /* PopularBrandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D2B2BF1B9C100C24728 /* PopularBrandsView.swift */; };
+		61675D2E2BF1BA3900C24728 /* TopCarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D2D2BF1BA3900C24728 /* TopCarsView.swift */; };
+		61675D302BF1BA7A00C24728 /* DetailCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D2F2BF1BA7A00C24728 /* DetailCarView.swift */; };
+		61675D322BF1BAB000C24728 /* MyInsuranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D312BF1BAB000C24728 /* MyInsuranceView.swift */; };
+		61675D342BF1BAEA00C24728 /* ImageViewPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D332BF1BAEA00C24728 /* ImageViewPager.swift */; };
+		61675D362BF1BB0D00C24728 /* TripDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61675D352BF1BB0D00C24728 /* TripDateView.swift */; };
 		61AFBB112BEF08DD00ECCF95 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFBB102BEF08DD00ECCF95 /* Car.swift */; };
 		61AFBB132BEF08F800ECCF95 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AFBB122BEF08F800ECCF95 /* Brand.swift */; };
 		7D5639572BF0ECA50009772D /* favoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5639562BF0ECA50009772D /* favoritesView.swift */; };
@@ -62,6 +70,14 @@
 		61675D1F2BF1901A00C24728 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		61675D212BF1912900C24728 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavoritesView.swift; path = Views/FavoritesView.swift; sourceTree = SOURCE_ROOT; };
 		61675D232BF1919B00C24728 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		61675D272BF1B88200C24728 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		61675D292BF1B98600C24728 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		61675D2B2BF1B9C100C24728 /* PopularBrandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularBrandsView.swift; sourceTree = "<group>"; };
+		61675D2D2BF1BA3900C24728 /* TopCarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCarsView.swift; sourceTree = "<group>"; };
+		61675D2F2BF1BA7A00C24728 /* DetailCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCarView.swift; sourceTree = "<group>"; };
+		61675D312BF1BAB000C24728 /* MyInsuranceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInsuranceView.swift; sourceTree = "<group>"; };
+		61675D332BF1BAEA00C24728 /* ImageViewPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewPager.swift; sourceTree = "<group>"; };
+		61675D352BF1BB0D00C24728 /* TripDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDateView.swift; sourceTree = "<group>"; };
 		61AFBB102BEF08DD00ECCF95 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		61AFBB122BEF08F800ECCF95 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		7D5639562BF0ECA50009772D /* favoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesView.swift; sourceTree = "<group>"; };
@@ -169,6 +185,14 @@
 		610D4A012BF0F107002C1D7F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				61675D272BF1B88200C24728 /* CustomSearchBar.swift */,
+				61675D292BF1B98600C24728 /* ExploreView.swift */,
+				61675D2B2BF1B9C100C24728 /* PopularBrandsView.swift */,
+				61675D2D2BF1BA3900C24728 /* TopCarsView.swift */,
+				61675D2F2BF1BA7A00C24728 /* DetailCarView.swift */,
+				61675D312BF1BAB000C24728 /* MyInsuranceView.swift */,
+				61675D332BF1BAEA00C24728 /* ImageViewPager.swift */,
+				61675D352BF1BB0D00C24728 /* TripDateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -462,9 +486,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				61675D222BF1912900C24728 /* FavoritesView.swift in Sources */,
+				61675D342BF1BAEA00C24728 /* ImageViewPager.swift in Sources */,
+				61675D2E2BF1BA3900C24728 /* TopCarsView.swift in Sources */,
 				844E2F3D2BEF498500FE2C70 /* MainPageViewModel.swift in Sources */,
 				61675D1C2BF18F4900C24728 /* EditProfileView.swift in Sources */,
 				61675D162BF18DC200C24728 /* TripsView.swift in Sources */,
+				61675D322BF1BAB000C24728 /* MyInsuranceView.swift in Sources */,
 				8456B1B12BF19C6200E2C4F4 /* ImageView.swift in Sources */,
 				84BE5AF42BEE200A00A8864C /* ContentView.swift in Sources */,
 				61AFBB132BEF08F800ECCF95 /* Brand.swift in Sources */,
@@ -474,15 +501,20 @@
 				61675D1A2BF18F0500C24728 /* MoreView.swift in Sources */,
 				844E2F3B2BEF3C6700FE2C70 /* NavigationModifier.swift in Sources */,
 				8456B1A92BF19AC300E2C4F4 /* BrandsCarView.swift in Sources */,
+				61675D302BF1BA7A00C24728 /* DetailCarView.swift in Sources */,
+				61675D282BF1B88200C24728 /* CustomSearchBar.swift in Sources */,
 				61675D182BF18E5E00C24728 /* MainTabbarView.swift in Sources */,
 				84BE5B242BEF1F9100A8864C /* MainPageView.swift in Sources */,
 				61675D242BF1919B00C24728 /* ExploreViewModel.swift in Sources */,
 				8456B1AB2BF19ACA00E2C4F4 /* BrandsView.swift in Sources */,
 				84BE5B222BEF1F6900A8864C /* MainBarView.swift in Sources */,
 				8456B1AD2BF19AD600E2C4F4 /* CarDetailedView.swift in Sources */,
+				61675D2C2BF1B9C100C24728 /* PopularBrandsView.swift in Sources */,
 				84BE5AF22BEE200A00A8864C /* IOS_Assignment_3App.swift in Sources */,
 				61AFBB112BEF08DD00ECCF95 /* Car.swift in Sources */,
+				61675D2A2BF1B98600C24728 /* ExploreView.swift in Sources */,
 				8456B1AF2BF19AE000E2C4F4 /* CarListView.swift in Sources */,
+				61675D362BF1BB0D00C24728 /* TripDateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
