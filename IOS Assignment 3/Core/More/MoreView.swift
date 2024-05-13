@@ -8,64 +8,78 @@
 import SwiftUI
 
 struct MoreView: View {
-    var parametersOptions: [(String,Image)] = [("Account",Image(systemName: "person")),("How CarRentalApp works",Image(systemName: "key.horizontal")),("Contact Support",Image(systemName: "person.wave.2")),("Legal",Image(systemName: "newspaper")),("Open source license",Image(systemName: "newspaper"))]
+    var parametersOptions: [(String, Image)] = [
+        ("Account", Image(systemName: "person")),
+        ("How CarRentalApp works", Image(systemName: "key.horizontal")),
+        ("Contact Support", Image(systemName: "person.wave.2")),
+        ("Legal", Image(systemName: "newspaper")),
+        ("Open source license", Image(systemName: "newspaper"))
+    ]
     @State private var showAlert: Bool = false
     @State private var displayEditProfileView: Bool = false
+    
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
-                VStack(alignment: .leading,spacing: 30) {
+                VStack(alignment: .leading, spacing: 20) {
                     Button(action: {
                         displayEditProfileView.toggle()
                     }, label: {
                         HeaderView()
                     })
                     
-                        VStack(spacing: 60) {
-                            
-                                ForEach(parametersOptions, id: \.0) { option in
-                                    HStack {
-                                        option.1
-                                        .resizable()
-                                        .frame(width: 20, height: 20)
-                                        Text(option.0)
-                                    Spacer()
-                                }
-                                }
+                    VStack(spacing: 25) {
+                        ForEach(parametersOptions, id: \.0) { option in
+                            HStack {
+                                option.1
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                Text(option.0)
+                                    .padding(.leading, 10)
+                                Spacer()
                             }
-                        .padding(.horizontal)
-                        Divider()
-                        .padding(.vertical)
-                    VStack(alignment: .leading,spacing: 30) {
+                            .padding(.horizontal)
+                            .padding(.vertical, 10)
+                        }
+                    }
+                    
+                    Divider().padding(.vertical, 20)
+                    
+                    VStack(spacing: 25) {
                         Button(action: {
                             showAlert.toggle()
                         }, label: {
                             Text("Logout")
-                                .foregroundStyle(.black)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(.red)
                         })
+                        
                         Text("version 1.0")
                             .font(.caption)
                             .foregroundStyle(.gray)
                     }
                     .padding(.horizontal)
-                        }
-                    .padding(.vertical,40)
+                }
+                .padding(.vertical, 20)
             }
-            .alert("Are you sure you want to logut?", isPresented: $showAlert, actions: {
+            .alert("Confirm again", isPresented: $showAlert, actions: {
                 Button("Logout") { }
                 Button("Cancel", role: .cancel) {}
             })
-            .ignoresSafeArea()
             .background(Color(.systemGray6))
+            .ignoresSafeArea()
             .fullScreenCover(isPresented: $displayEditProfileView, content: {
-                EditProfileView()
+                EditProfileView() 
             })
         }
-        }
     }
+}
 
-#Preview {
-    MoreView()
+// prview
+struct MoreView_Previews: PreviewProvider {
+    static var previews: some View {
+        MoreView()
+    }
 }
 
 struct HeaderView: View {
@@ -74,15 +88,16 @@ struct HeaderView: View {
             HStack(spacing: 15) {
                 Image("michael_scott")
                     .resizable()
+                    .scaledToFill()
                     .frame(width: 60, height: 60)
-                    .foregroundStyle(.gray)
                     .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.gray, lineWidth: 2))
                 VStack(alignment: .leading) {
-                    Text("Wanda Maximov")
+                    Text("UTS_stu")
                         .font(.headline)
                         .fontWeight(.semibold)
-                        .foregroundStyle(.black)
-                    Text("View and edit profile")
+                    Text("View and edit your profile")
+                        .font(.caption)
                         .foregroundStyle(.blue)
                 }
                 Spacer()
