@@ -24,6 +24,12 @@ struct DetailCarView: View {
                 detailedInfoSections
             }
         }
+        .scrollIndicators(.hidden)
+        .ignoresSafeArea()
+        .background(Color(.systemGray6))
+        .toolbar(.hidden, for: .tabBar)
+        .overlay(bottomBar)
+        
     }
 
     private var carInfoSection: some View {
@@ -43,7 +49,7 @@ struct DetailCarView: View {
     private var detailedInfoSections: some View {
         VStack {
             Divider()
-            TripsView()
+            TripDateView()
             Divider()
             LocationView(title: "Pick & Return", message: "Sydney")
             CancellationView(title: "Cancellation Policy", message: "Free")
@@ -79,7 +85,7 @@ struct DetailCarView: View {
             Spacer()
             NextStepButton
         }
-        .padding(.horizontal, 20)
+        .padding(.horizontal, 10)
         .padding(.vertical)
     }
     
