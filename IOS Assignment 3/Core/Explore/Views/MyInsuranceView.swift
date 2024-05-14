@@ -16,7 +16,7 @@ struct MyInsuranceView: View {
             Image(systemName: "questionmark.circle")
                 .resizable()
                 .frame(width: 35, height: 35)
-            Text("All CarRentalAPP protection plans include a third-party libality in surance policy issued to CarRentalAPP. The policy provides secondary coverage to ensure that any CarRentalAPP driver will be insured to the state minimum limits required for third-party liability, unless primary coverage is explicitly required by an applicable state statute. Liabality coverage is devending on the plan chosen. \n \n Protection plan also come with 24/7 customer support and access to roadside service, subject to additional terms,conditions and costs.")
+            Text("All UTS RENTCAR protection plans include a third-party liability insurance policy issued to UTS RENTCAR. The policy provides secondary coverage to ensure that any UTSRENT driver will be insured to the state minimum limits required for third-party liability, unless primary coverage is explicitly required by an applicable state statute. Liability coverage depends on the plan chosen.")
                 .font(.subheadline)
             Spacer()
         }
