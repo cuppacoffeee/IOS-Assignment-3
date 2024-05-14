@@ -14,50 +14,48 @@ struct PopularBrandsView: View {
     }
     
     var body: some View {
-            VStack {
-                HStack {
-                    Text("Brands")
-                        .font(.headline)
+        VStack {
+            HStack {
+                Text("Brands")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                Spacer()
+                
+                Button(action: {}, label: {
+                    Text("See All")
+                        .font(.footnote)
                         .fontWeight(.semibold)
-                    Spacer()
-                    
-                    Button(action: {}, label: {
-                        Text("See All")
-                            .font(.footnote)
-                            .fontWeight(.semibold)
-                    })
-                }
-                    .foregroundStyle(.white)
-                    .padding()
-                    
-                    ScrollView(.horizontal) {
-                        HStack {
-                            ForEach(viewModel.brand) {
-                                brand in
-                                NavigationLink(destination: BrandsCarView(brand: brand, viewModel: viewModel)) {
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .fill(.white)
-                                        .frame(width: 150, height: 200)
-                                        .overlay {
-                                            VStack {
-                                                Image(brand.imageName)
-                                                    .resizable()
-                                                    .scaledToFill()
-                                                    .frame(width: 50, height: 50)
-                                                Text(brand.brandName)
-                                            }
-                                        }
+                })
+            }
+            .foregroundStyle(.white)
+            .padding()
+            
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(viewModel.brand) { brand in
+                        NavigationLink(destination: BrandsCarView(brand: brand, viewModel: viewModel)) {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(.white)
+                                .frame(width: 150, height: 200)
+                                .overlay {
+                                    VStack {
+                                        Image(brand.imageName)
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(width: 50, height: 50)
+                                        Text(brand.brandName)
+                                    }
                                 }
-                            }
                         }
-                       
                     }
-                    .scrollIndicators(.hidden)
                 }
-                .padding(.horizontal)
+            }
+            .scrollIndicators(.hidden)
         }
+        .padding(.horizontal)
     }
- 
+}
+
 #Preview {
     PopularBrandsView(viewModel: ExploreViewModel())
 }

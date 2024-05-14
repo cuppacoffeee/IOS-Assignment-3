@@ -17,14 +17,22 @@ struct BrandsCarView: View {
                 .font(.headline)
                 .fontWeight(.semibold)
             
-            ForEach(viewModel.cars.filter { $0.brand == brand.brandName}) {
-                car in
-                NavigationLink(destination: DetailCarView(viewModel: viewModel, index: viewModel.cars.firstIndex(where: { $0 == car}) ?? 0)) {
-                    TopCarsView(index: viewModel.cars.firstIndex(where: { $0 == car}) ?? 0, viewModel: viewModel)
+            ForEach(filteredCars) { car in
+                if let index = viewModel.cars.firstIndex(of: car) {
+                    NavigationLink(destination: DetailCarView(viewModel: viewModel, index: index)) {
+                        TopCarsView(cars: [car])
+                    }
                 }
             }
         }
         .padding()
     }
+    
+    private var filteredCars: [Car] {
+        viewModel.cars.filter { $0.brand == brand.brandName }
+    }
 }
 
+#Preview {
+    BrandsCarView(brand: ExploreViewModel().brand[0], viewModel: ExploreViewModel())
+}

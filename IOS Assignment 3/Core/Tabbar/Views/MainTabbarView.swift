@@ -10,26 +10,21 @@ import SwiftUI
 struct MainTabbarView: View {
     @StateObject private var viewModel = ExploreViewModel()
     
-    
     var body: some View {
         TabView {
-            ExploreView(viewModel: ExploreViewModel())
+            ExploreView(viewModel: viewModel)
                 .tabItem {
                     VStack {
                         Image(systemName: "magnifyingglass")
                         Text("Explore")
-
                     }
                 }
-                .padding()
             
-            
-            FavoritesView(viewModel: viewModel)                .tabItem {
+            FavoritesView(viewModel: viewModel)
+                .tabItem {
                     VStack {
                         Image(systemName: "heart")
                         Text("Favorite")
-                        
-                        
                     }
                 }
                 .padding()
@@ -39,7 +34,6 @@ struct MainTabbarView: View {
                     VStack {
                         Image(systemName: "car")
                         Text("Travel")
-
                     }
                 }
                 .padding()
@@ -49,7 +43,6 @@ struct MainTabbarView: View {
                     VStack {
                         Image(systemName: "message")
                         Text("Message")
-
                     }
                 }
                 .padding()
@@ -59,7 +52,6 @@ struct MainTabbarView: View {
                     VStack {
                         Image(systemName: "ellipsis")
                         Text("More")
-
                     }
                 }
                 .padding()

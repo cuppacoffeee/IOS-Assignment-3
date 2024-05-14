@@ -7,9 +7,7 @@
 
 import Foundation
 
-
-struct Car: Identifiable,Codable,Hashable {
-    
+struct Car: Identifiable, Codable, Hashable {
     let id: String
     let carName: String
     var rating: Double
@@ -32,3 +30,5 @@ struct Car: Identifiable,Codable,Hashable {
         isFavorite.toggle()
     }
 }
+
+

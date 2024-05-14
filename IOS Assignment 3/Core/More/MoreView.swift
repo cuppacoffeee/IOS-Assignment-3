@@ -10,7 +10,7 @@ import SwiftUI
 struct MoreView: View {
     var parametersOptions: [(String, Image)] = [
         ("Account", Image(systemName: "person")),
-        ("How CarRentalApp works", Image(systemName: "key.horizontal")),
+        ("How UTS RENTCAR works", Image(systemName: "key.horizontal")),
         ("Contact Support", Image(systemName: "person.wave.2")),
         ("Legal", Image(systemName: "newspaper")),
         ("Open source license", Image(systemName: "newspaper"))

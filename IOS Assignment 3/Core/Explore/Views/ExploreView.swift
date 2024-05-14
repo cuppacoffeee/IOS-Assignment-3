@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ExploreView: View {
     @StateObject var viewModel: ExploreViewModel
+    @State private var searchText: String = ""
+    
     init(viewModel: ExploreViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
     }
@@ -16,18 +18,30 @@ struct ExploreView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                ZStack{
+                ZStack {
                     GradientColorBackground()
                     
                     VStack {
                         Spacer().frame(height: 150)
-                        searchBar()
+                        CustomSearchBar(searchText: $searchText)
                         Spacer().frame(height: 60)
-                        PopularBrandsView(viewModel: ExploreViewModel())
+                        if searchText.isEmpty {
+                            PopularBrandsView(viewModel: viewModel)
+                        } else {
+                            TopCarsView(cars: filteredCars)
+                        }
                     }
                 }
             }
             .modifier(NavigationModifier())
+        }
+    }
+    
+    private var filteredCars: [Car] {
+        if searchText.isEmpty {
+            return viewModel.cars
+        } else {
+            return viewModel.cars.filter { $0.carName.lowercased().contains(searchText.lowercased()) }
         }
     }
 }
@@ -43,29 +57,5 @@ struct GradientColorBackground: View {
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2)
             Spacer()
         }
-    }
-}
-
-struct searchBar: View {
-    var body: some View {
-        Button(action: {}, label: {
-            HStack {
-                Image(systemName: "magnifyingglass")
-                    .padding(.leading)
-                    .foregroundStyle(.white)
-                Text("Search car you want...")
-                    .font(.footnote)
-                    .foregroundStyle(.white)
-                Spacer()
-            }
-            .frame(height: 60)
-            .overlay {
-                Capsule()
-                    .stroke(lineWidth: 0.5)
-                    .foregroundStyle(Color(.systemGray3))
-                    .shadow(color: .black.opacity(0.6), radius: 10)
-            }
-            .padding(.horizontal)
-        })
     }
 }
