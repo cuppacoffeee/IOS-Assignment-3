@@ -54,7 +54,7 @@ struct MoreView: View {
                                 .foregroundStyle(.red)
                         })
                         
-                        Text("version 1.0")
+                        Text("version 2.4.3")
                             .font(.caption)
                             .foregroundStyle(.gray)
                     }

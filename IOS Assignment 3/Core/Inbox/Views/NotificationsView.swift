@@ -10,28 +10,34 @@ import SwiftUI
 struct NotificationsView: View {
     var body: some View {
         VStack {
-            Text("Activity")
-                .font(.headline)
-                .fontWeight(.bold)
+            header
             Divider()
-            HStack(alignment: .top,spacing: 15) {
-                Circle()
-                    .frame(width: 75, height: 75)
-                    .overlay {
-                        Text("CarRentalApp")
-                            .font(.caption2)
-                            .foregroundStyle(.white)
-                    }
-                VStack(alignment: .leading) {
-                    Text("Welcome to CarRentalApp")
-                        .font(.headline)
-                        .fontWeight(.semibold)
-                    Text("Thanks for joining the CarRentalApp community. your adventure starts here")
-                }
-            }
-            .padding()
+            notificationContent
             Divider()
         }
+        .padding()
+    }
+    
+    var header: some View {
+        Text("Activity")
+            .font(.headline)
+            .fontWeight(.bold)
+    }
+    
+    var notificationContent: some View {
+        HStack(alignment: .top, spacing: 15) {
+            Image("UTS_logo")
+                .resizable()
+                .frame(width: 75, height: 75)
+                .clipShape(Circle())
+            VStack(alignment: .leading) {
+                Text("Welcome to UTS RENTCAR")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                Text("Thanks for joining the UTS RENTCAR community.")
+            }
+        }
+        .padding()
     }
 }
 
