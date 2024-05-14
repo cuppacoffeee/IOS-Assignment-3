@@ -25,7 +25,7 @@ class ExploreViewModel: ObservableObject {
         
         
         
-        Car(id: UUID().uuidString, carName: "BMW 440i", rating: 5.0, brand: "BMW", pricePerDay: 300, description: "", mainImageName: "440", imagesNames: ["440", ""], insurance: "", numberOfSeats: 4, numberOfDoors: 2, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: true),
+        Car(id: UUID().uuidString, carName: "BMW 440i", rating: 5.0, brand: "BMW", pricePerDay: 300, description: "Very nice car with a turbocharged six-cylinder engine that delivers up to 333 horsepower.", mainImageName: "440", imagesNames: ["440", ""], insurance: "", numberOfSeats: 4, numberOfDoors: 4, GasType: "91#", hostName: "Peter", hostImageName: "", hostJoinDate: "1/Apr/2024", isFavorite: true),
         
         Car(id: UUID().uuidString, carName: "", rating: 5.0, brand: "", pricePerDay: 50, description: "", mainImageName: "", imagesNames: ["", ""], insurance: "", numberOfSeats: 5, numberOfDoors: 4, GasType: "", hostName: "", hostImageName: "", hostJoinDate: "", isFavorite: false)
     ]

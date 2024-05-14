@@ -42,7 +42,22 @@ struct DetailCarView: View {
     
     private var detailedInfoSections: some View {
         VStack {
-
+            Divider()
+            TripsView()
+            Divider()
+            LocationView(title: "Pick & Return", message: "Sydney")
+            CancellationView(title: "Cancellation Policy", message: "Free")
+            Divider()
+            CarInfoView(title: "Included Distance", message: viewModel.cars[index].maxDistance == nil ? "Unlimited" : "\(viewModel.cars[index].maxDistance ?? 0) km")
+            Divider()
+            InsuranceInfoView(title: "Insurance", message: viewModel.cars[index].insurance)
+            Divider()
+            CarBasicsView(title: "Car Basics", numberOfSeats: viewModel.cars[index].numberOfSeats, numberOfDoors: viewModel.cars[index].numberOfDoors, gasType: viewModel.cars[index].GasType)
+            Divider()
+            CarInfoView(title: "Description", message: viewModel.cars[index].description)
+            Divider()
+            HostView(title: "published by", message: viewModel.cars[index].hostName, imageName: viewModel.cars[index].hostImageName, joinDate: viewModel.cars[index].hostJoinDate)
+            Spacer().frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
         }
     }
     
