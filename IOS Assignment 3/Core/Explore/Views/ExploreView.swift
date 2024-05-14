@@ -8,33 +8,26 @@
 import SwiftUI
 
 struct ExploreView: View {
-    @State private var searchText: String = ""
-    private var widthSearchBar: CGFloat = UIScreen.main.bounds.width - 30
     @StateObject var viewModel: ExploreViewModel
     init(viewModel: ExploreViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
     }
+    
     var body: some View {
         NavigationStack {
-            ScrollView(showsIndicators: false) {
-                ZStack {
+            ScrollView {
+                ZStack{
                     GradientColorBackground()
+                    
                     VStack {
-                        Spacer()
-                            .frame(height: 150)
-                        CustomSearchBar()
-                        Spacer()
-                            .frame(height: 60)
-                        PopularBrandsView(viewModel: viewModel)
-                        TopCarsView(viewModel: viewModel)
-                        Spacer()
-                            .frame(height: 50)
+                        Spacer().frame(height: 150)
+                        searchBar()
+                        Spacer().frame(height: 60)
+                        PopularBrandsView(viewModel: ExploreViewModel())
                     }
                 }
-                    
-                    
             }
-            .navigationStackModifier()
+            .modifier(NavigationModifier())
         }
     }
 }
@@ -46,9 +39,33 @@ struct ExploreView: View {
 struct GradientColorBackground: View {
     var body: some View {
         VStack {
-            LinearGradient(colors: [Color(.systemGray),.blue], startPoint: .top, endPoint: .center)
-                .frame(width: UIScreen.main.bounds.width,height: UIScreen.main.bounds.height / 2)
+            LinearGradient(colors: [.gray, .blue], startPoint: .top, endPoint: .bottom)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2)
             Spacer()
         }
+    }
+}
+
+struct searchBar: View {
+    var body: some View {
+        Button(action: {}, label: {
+            HStack {
+                Image(systemName: "magnifyingglass")
+                    .padding(.leading)
+                    .foregroundStyle(.white)
+                Text("Search car you want...")
+                    .font(.footnote)
+                    .foregroundStyle(.white)
+                Spacer()
+            }
+            .frame(height: 60)
+            .overlay {
+                Capsule()
+                    .stroke(lineWidth: 0.5)
+                    .foregroundStyle(Color(.systemGray3))
+                    .shadow(color: .black.opacity(0.6), radius: 10)
+            }
+            .padding(.horizontal)
+        })
     }
 }

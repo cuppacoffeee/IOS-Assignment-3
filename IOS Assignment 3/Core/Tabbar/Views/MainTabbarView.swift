@@ -9,66 +9,62 @@ import SwiftUI
 
 struct MainTabbarView: View {
     @StateObject private var viewModel = ExploreViewModel()
-    @State private var selectedTab: Int = 0
+    
+    
     var body: some View {
         TabView {
-            ExploreView(viewModel: viewModel)
+            ExploreView(viewModel: ExploreViewModel())
                 .tabItem {
                     VStack {
                         Image(systemName: "magnifyingglass")
-                            .environment(\.symbolVariants,selectedTab == 0 ? .fill : .none)
-                        Text("Search")
+                        Text("Explore")
+
                     }
                 }
-                .onAppear{
-                    selectedTab = 0
-                }
-            FavoritesView(viewModel: viewModel)
-                .tabItem {
+                .padding()
+            
+            
+            FavoritesView(viewModel: viewModel)                .tabItem {
                     VStack {
                         Image(systemName: "heart")
-                            .environment(\.symbolVariants,selectedTab == 1 ? .fill : .none)
-                        Text("Favorites")
+                        Text("Favorite")
+                        
+                        
                     }
                 }
-                .onAppear{
-                    selectedTab = 1
-                }
+                .padding()
+            
             TripsView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "road.lanes")
-                            .environment(\.symbolVariants,selectedTab == 2 ? .fill : .none)
-                        Text("Trips")
+                        Image(systemName: "car")
+                        Text("Travel")
+
                     }
                 }
-                .onAppear{
-                    selectedTab = 2
-                }
+                .padding()
+            
             InboxView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "bubble")
-                            .environment(\.symbolVariants,selectedTab == 3 ? .fill : .none)
-                        Text("Inbox")
+                        Image(systemName: "message")
+                        Text("Message")
+
                     }
                 }
-                .onAppear{
-                    selectedTab = 3
-                }
+                .padding()
+            
             MoreView()
                 .tabItem {
                     VStack {
                         Image(systemName: "ellipsis")
-                            .environment(\.symbolVariants,selectedTab == 4 ? .fill : .none)
                         Text("More")
+
                     }
                 }
-                .onAppear{
-                    selectedTab = 4
-                }
+                .padding()
         }
-        .onAppear{
+        .onAppear {
             UITabBar.appearance().backgroundColor = .white
         }
     }

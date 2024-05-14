@@ -11,82 +11,81 @@ struct DetailCarView: View {
     let index: Int
     @StateObject private var viewModel: ExploreViewModel
     
-    init(viewModel: ExploreViewModel,index: Int) {
+    init(viewModel: ExploreViewModel, index: Int) {
         self._viewModel = StateObject(wrappedValue: viewModel)
         self.index = index
     }
+    
     var body: some View {
-        
         ScrollView {
-            VStack(alignment: .leading,spacing: 15) {
+            VStack(alignment: .leading, spacing: 10) {
                 ImageViewPager(viewModel: viewModel, index: index)
-                VStack(alignment: .leading,spacing: 15) {
-                    Text(viewModel.cars[index].carName)
-                        .font(.headline)
-                        .fontWeight(.bold)
-                    HStack(spacing: 2) {
-                        Text(String(format: "%.1f", viewModel.cars[index].rating))
-                        
-                        Image(systemName: "star.fill")
-                            .foregroundStyle(.orange)
-                    }
-                }
-                .padding(.horizontal)
-                Divider()
-                TripDateView()
-                Divider()
-                LocationView(title: "Pickup & Return", message: "San Francisco")
-                Divider()
-                CancellationView(title: "Cancellation policy", message: "Free cancellation")
-                Divider()
-                CarInfoView(title: "Distance included", message: viewModel.cars[index].maxDistance == nil ? "Unlimited" : "\(viewModel.cars[index].maxDistance ?? 0) km")
-                Divider()
-                InsuranceInfoView(title: "Insurance & Protection", message: viewModel.cars[index].insurance)
-                Divider()
-                CarBasicsView(title: "Car Basics", numberOfSeats: viewModel.cars[index].numberOfSeats, numberOfDoors: viewModel.cars[index].numberOfDoors, gasType: viewModel.cars[index].GasType)
-                Divider()
-                CarInfoView(title: "Description", message: viewModel.cars[index].description)
-                Divider()
-                HostView(title: "Hosted by", message:  viewModel.cars[index].hostName, imageName: viewModel.cars[index].hostImageName, joinDate:viewModel.cars[index].hostJoinDate)
-                Spacer()
-                    .frame(height: 120)
-                
+                carInfoSection
+                detailedInfoSections
             }
         }
-        .scrollIndicators(.hidden)
-        .ignoresSafeArea()
-        .background(Color(.systemGray6))
-        .toolbar(.hidden, for: .tabBar)
-        .overlay {
-            VStack {
-                Spacer()
-                ZStack {
-                    Color.white
-                        .frame(width: UIScreen.main.bounds.width, height: 120)
-                    HStack {
-                        VStack {
-                            Text("\(viewModel.cars[index].pricePerDay)$ per day")
-                                .font(.headline)
-                                .fontWeight(.semibold)
-                            Text("\(viewModel.cars[index].pricePerDay * 3)$ est. total")
-                                .font(.subheadline)
-                                .underline()
-                        }
-                        Spacer()
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                            Text("Continue")
-                                .foregroundStyle(.white)
-                                .frame(width: 120, height: 35)
-                                .background(.blue)
-                                .clipShape(RoundedRectangle(cornerRadius: 8))
-                        })
-                    }
-                    .padding(.horizontal,20)
-                    .padding(.vertical)
-                }
-                
+    }
+
+    private var carInfoSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(viewModel.cars[index].carName)
+                .font(.headline)
+                .fontWeight(.bold)
+            HStack(spacing: 2) {
+                Text(String(format: "%.1f", viewModel.cars[index].rating))
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.orange)
             }
-            .ignoresSafeArea()
+        }
+        .padding(.horizontal)
+    }
+    
+    private var detailedInfoSections: some View {
+        VStack {
+
+        }
+    }
+    
+    private var bottomBar: some View {
+        VStack {
+            Spacer()
+            ZStack {
+                Color.white
+                    .frame(width: UIScreen.main.bounds.width, height: 120)
+                priceButton
+            }
+        }
+        .ignoresSafeArea()
+    }
+    
+    private var priceButton: some View {
+        HStack {
+            priceDetails
+            Spacer()
+            NextStepButton
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical)
+    }
+    
+    private var priceDetails: some View {
+        VStack {
+            Text("\(viewModel.cars[index].pricePerDay)$ per day")
+                .font(.headline)
+                .fontWeight(.semibold)
+            Text("\(viewModel.cars[index].pricePerDay * 2)$ total")
+                .font(.subheadline)
+                .underline()
+        }
+    }
+    
+    private var NextStepButton: some View {
+        Button(action: {}) {
+            Text("Next Step")
+                .foregroundStyle(.white)
+                .frame(width: 100, height: 40)
+                .background(.blue)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
         }
     }
 }

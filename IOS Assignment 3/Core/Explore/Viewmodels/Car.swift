@@ -32,4 +32,3 @@ struct Car: Identifiable,Codable,Hashable {
         isFavorite.toggle()
     }
 }
-

@@ -7,41 +7,44 @@
 
 import SwiftUI
 
-struct NavigationStackModifier: ViewModifier {
-    
+struct NavigationModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .background{
-                    Color(.systemGray6)
-            }
+        
+            .scrollIndicators(.hidden)
+            .background(Color(.systemGray6))
             .ignoresSafeArea()
-            .navigationTitle("Find Cars")
+            .navigationTitle("Rent Car")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
                 ToolbarItem(placement: .topBarLeading) {
                     Circle()
                         .fill(.white.opacity(0.1))
-                        .frame(width:45,height: 45)
+                        .frame(width: 45, height: 45)
                         .overlay {
-                            Image(systemName: "bell.badge")
+                            Image(systemName: "bell")
                                 .foregroundStyle(.white)
                         }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
-                    Image("michael_scott")
-                        .resizable()
-                        .frame(width:45,height: 45)
-                        .scaledToFill()
-                        .clipShape(Circle())
+                    Circle()
+                    
+                        .fill(.white.opacity(0.1))
+                        .frame(width: 45, height: 45)
+                        .overlay {
+                            Image(systemName: "person")
+                                .foregroundStyle(.white)
+                        }
                 }
             }
-        
     }
 }
 
 extension View {
-    func navigationStackModifier() -> some View {
-        modifier(NavigationStackModifier())
+    func navigationModifier() -> some View {
+        return modifier(NavigationModifier())
     }
 }
+
+
 
